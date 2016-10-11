@@ -19,4 +19,8 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.profile_data{
+    text-decoration: italic;
+    max-width: 500px;
+    padding-bottom: 10px;
+}
