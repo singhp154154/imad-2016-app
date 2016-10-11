@@ -28,7 +28,11 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
+//MAKING COUNTER END POINT
+var counter = 0;
+app.get('/counter', function(req,res){
+    res.send(counter.toString());
+});
 //CHANGING THE MAIN TEXT OF WEBAPP
 
 var element = document.getElementbyId('main-text');
