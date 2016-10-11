@@ -29,6 +29,23 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+//CHANGING THE MAIN TEXT OF WEBAPP
+
+var element = document.getElementbyId('main-text');
+element.innerHTML = 'The value of main text had been changed by javascript';
+
+// MAKE AN IMAGE MOVE IN CLICKING
+var img = document.getElementbyId('madi');
+var marginright=0;
+function marginright(){
+    marginleft = marginleft+1;
+    img.style.marginleft = marginleft + 'px';
+}
+
+//EXCUCUTE THE FUNCTION ON CLICKING
+img.onclick = function(){
+    var interval = setinterval(moveright,50);
+};
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
