@@ -21,3 +21,7 @@ request.onreadystatechange = function() {
 //make a request
 request.open('GET', 'http://singhp154154.imad.hasur-app.io/counter',true);
 request.sernd(null);
+
+//Submit name
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
