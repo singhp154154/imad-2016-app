@@ -1,41 +1,23 @@
-//counter code
+var express = require('express');
+var morgan = require('morgan');
+var path = require('path');
 
-var button = document.getElementById('counter');
-button.onclick = function () {
-    //careate a req object
-    var request = new XMLHttpRequest();
-};
-// CAPTURE A RESPONSE STORE IT IN A VARIABLE 
-request.onreadystatechange = function() {
-  if (request.readystatsechange === XMLHttprequest.DONE) {
-      //take some acction
-      if(requeststatus === 200){
-          var counter = request.responseText;
-          var span = document.getElementById('count');
-          sapn.innerHTML = counter.toString();
-      }
-  } 
-  // else we dont want nothing to happen
-};
+var app = express();
+app.use(morgan('combined'));
 
-//make a request
-request.open('GET', 'http://singhp154154.imad.hasur-app.io/counter',true);
-request.sernd(null);
+app.get('/', function(req,res) {
+    res.sendFile(path.join(__dirname, ui, 'index.html'));
+});
 
-//Submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
-var submit = document.getElemrntById(submit_btn);
-submit.onclick = function(){
-//Make a request to a server and sendthe name
+app.get('/ui/style.css', function(req, res){
+    res.sendFile(path.join(__dirname, ui, 'style.css'));
+});
 
-//capture a list of name and render it as a list
+app.get('/ui/madi.png', function(req, res){
+    res.sendFile(path.join(__dirname, ui, 'madi.png'));
+});
 
-var name = ['name1', 'name2', 'name3', 'name4'];
-var list = '';
-for (var i=0; i< names,length; i++){
-    list += '<li>' + name[i] + '</li>';
-}
-var ul = document.getElementById('namelist');
-ul.innerHTML = list;
-};
+var port = 8080; //Use 8080 for local development because you might already have apache running on port 80
+app.listen(8080, function(){
+    console.log('IMAD course app listening on port ${port}!');
+});
