@@ -1,9 +1,9 @@
 console.log('Loaded!');
 //changing the value of html by using inner html tag
 //grab the element
-var element = document.getElementById('main-text');
+//var element = document.getElementById('main-text');
 //apply the change in html by using inner element jvascript
-element.innerHTML = 'hy this time i have made some changes by the power of jvascript';
+//element.innerHTML = 'hy this time i have made some changes by the power of jvascript';
 //moving the image to left gradually
 //select the img to move
 var img = document.getElementById('madi');
