@@ -8,7 +8,7 @@ element.innerHTML = 'hy this time i have made some changes by the power of jvasc
 //select the img to move
 var img = document.getElementById('madi');
 //create a variable which move element right and initilize it
-var marginleft =0;
+var marginleft = 0;
 //create a function which move the value of the function right gradually
 function moveRight () {
   marginleft = marginleft + 1;
