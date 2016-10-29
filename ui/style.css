@@ -24,6 +24,7 @@ body {
      -ms-transform: rotate(180deg);
      -o-transform: rotate(180deg);
      transform: rotate(180deg);
+     float: left;
 }
 .profile_data{
     text-decoration: italic;
