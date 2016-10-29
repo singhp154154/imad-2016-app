@@ -8,11 +8,11 @@ element.innerHTML = 'hy this time i have made some changes by the power of jvasc
 //select the img to move
 var img = document.getElementById('madi');
 //create a variable which move element right and initilize it
-var marginright =0;
+var marginleft =0;
 //create a function which move the value of the function right gradually
 function moveRight () {
-  marginright = marginright = 1;
-  img.stylr.marginright = marginright + 'px';
+  marginleft = marginleft = 1;
+  img.style.marginlet = marginleft + 'px';
 }
 //give the cammand that on click initilise the function 
 img.onclick = function () {
