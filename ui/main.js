@@ -3,4 +3,4 @@ console.log('Loaded!');
 //grab the element
 var element = document.getElementById('main-text');
 //apply the change in html by using inner element jvascript
-element.innerHTML = 'hy this timeni have made some changes by the power of jvascript';
+element.innerHTML = 'hy this time i have made some changes by the power of jvascript';
