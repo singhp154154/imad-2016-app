@@ -13,6 +13,6 @@ function moveRight () {
   img.stylr.marginright = marginright + 'px';
 }
 //give the cammand that on click initilise the function 
-img.onclick = function (){
+img.onclick = function () {
     var interval = setInterval(moveRight, 50);
 };
