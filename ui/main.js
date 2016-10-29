@@ -11,7 +11,7 @@ var img = document.getElementById('madi');
 var marginleft = 0;
 //create a function which move the value of the function right gradually
 function moveRight () {
-  marginleft = marginleft + 1;
+  marginleft = marginleft + 5;
   img.style.marginlet = marginleft + 'px';
 }
 //give the cammand that on click initilise the function 
