@@ -1,9 +1,20 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    /*margin-top: 75px;*/
 }
 
+#welcome-bar{
+	transition-delay: 50;
+	background-color: #4286f4;
+	height: 15%;
+}
+#social-link{
+	text-align: right;
+}
+.social-button{
+	height: 15px;
+}
 .center {
     text-align: center;
 }
